@@ -22,6 +22,30 @@
       }
     };
   </script>
+  <style>
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      14% {
+        transform: scale(1.06);
+      }
+      28% {
+        transform: scale(1);
+      }
+      42% {
+        transform: scale(1.09);
+      }
+      70% {
+        transform: scale(1);
+      }
+    }
+
+    .heartbeat {
+      animation: heartbeat 1.8s ease-in-out infinite;
+      transform-origin: center;
+    }
+  </style>
 </head>
 <body class="bg-slateNight text-slate-100 selection:bg-cyan-400/30">
   <div class="fixed inset-0 -z-10 overflow-hidden">
@@ -55,7 +79,13 @@
         </p>
         <div class="mt-8 flex flex-wrap gap-4">
           <a href="#projects" class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">View Projects</a>
-          <a href="#contact" class="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">Contact Me</a>
+          <a href="cv/Mwesigye_Emmy_CV.pdf" download class="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+              <path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.29a1 1 0 1 1 1.4 1.41l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.41L11 12.59V4a1 1 0 0 1 1-1Z"/>
+              <path d="M5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/>
+            </svg>
+            Download CV
+          </a>
         </div>
         <div class="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
           <span>Software Engineering</span>
@@ -71,7 +101,7 @@
           <img
             src="images/profile_picture.png"
             alt="Portrait of Mwesigye Emmy"
-            class="h-full w-full rounded-2xl border border-white/10 object-cover"
+            class="heartbeat h-full w-full rounded-2xl border border-white/10 object-cover"
           >
         </div>
       </div>
