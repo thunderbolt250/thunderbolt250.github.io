@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mwesigye Emmy | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            slateNight: "#0b1120",
+            steelBlue: "#1e3a8a",
+            cyanGlow: "#22d3ee",
+            softSlate: "#94a3b8"
+          },
+          boxShadow: {
+            glow: "0 0 0 1px rgba(34, 211, 238, 0.18), 0 20px 45px rgba(15, 23, 42, 0.45)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-slateNight text-slate-100 selection:bg-cyan-400/30">
+  <div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(30,58,138,0.35),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.16),_transparent_28%),linear-gradient(180deg,_#020617_0%,_#0b1120_40%,_#111827_100%)]"></div>
+    <div class="absolute left-10 top-24 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl"></div>
+    <div class="absolute bottom-12 right-12 h-56 w-56 rounded-full bg-blue-600/10 blur-3xl"></div>
+  </div>
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#hero" class="text-lg font-semibold tracking-[0.2em] text-cyan-300">ME</a>
+      <div class="hidden gap-6 text-sm text-slate-300 md:flex">
+        <a href="#about" class="transition hover:text-cyan-300">About</a>
+        <a href="#skills" class="transition hover:text-cyan-300">Skills</a>
+        <a href="#projects" class="transition hover:text-cyan-300">Projects</a>
+        <a href="#contact" class="transition hover:text-cyan-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:px-8 lg:py-28">
+      <div>
+        <p class="mb-4 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-200">Portfolio</p>
+        <h1 class="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Mwesigye Emmy</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+          IT student, networking enthusiast, and software developer passionate about building secure, scalable, and user-friendly digital solutions.
+        </p>
+        <p class="mt-6 max-w-2xl text-base leading-7 text-softSlate">
+          Currently pursuing a Master of Science in Information Technology at Carnegie Mellon University Africa, with interests spanning software engineering, networking technologies, cloud infrastructure, and cybersecurity.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#projects" class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">View Projects</a>
+          <a href="#contact" class="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">Contact Me</a>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-6 text-sm text-slate-400">
+          <span>Software Engineering</span>
+          <span>Networking</span>
+          <span>Cybersecurity</span>
+          <span>Cloud Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="mx-auto w-full max-w-md">
+        <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-4 shadow-glow">
+          <div class="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/70 to-transparent"></div>
+          <img
+            src="images/profile_picture.png"
+            alt="Portrait of Mwesigye Emmy"
+            class="h-full w-full rounded-2xl border border-white/10 object-cover"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">About Me</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Building practical technology for real-world impact.</h2>
+        </div>
+        <div class="space-y-5 rounded-3xl border border-white/10 bg-white/5 p-8 text-slate-300 shadow-glow">
+          <p>
+            I am a software-development-focused IT student with experience in JavaScript, React.js, Node.js, Express, databases, and modern cloud-native tools. I enjoy turning complex technical ideas into useful systems and clean interfaces.
+          </p>
+          <p>
+            My academic path combines software engineering and networking technologies, while my project work has exposed me to cloud infrastructure, enterprise networking, malware analysis, and cybersecurity fundamentals.
+          </p>
+          <p>
+            I value adaptability, collaborative teamwork, and clean code practices, and I am especially motivated by projects that solve meaningful problems in secure and scalable ways.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div class="mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Skills</p>
+        <h2 class="mt-3 text-3xl font-semibold text-white">Technical strengths shaped by software, networking, and security.</h2>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+          <h3 class="text-lg font-semibold text-white">Programming & Web</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-300">Java, JavaScript, Python, C/C++, Data Structures & Algorithms, React.js, Node.js, Express.js, RESTful API design.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+          <h3 class="text-lg font-semibold text-white">Frontend & UI</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-300">Responsive UI development, React ecosystem, and familiarity with Tailwind CSS for modern interface design.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+          <h3 class="text-lg font-semibold text-white">Databases & Data</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-300">MySQL, MongoDB, PostgreSQL, and basic data modeling and querying.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+          <h3 class="text-lg font-semibold text-white">Cloud & DevOps</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-300">Kubernetes, Docker, OpenStack, Hadoop, containerized development, and cloud infrastructure fundamentals.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+          <h3 class="text-lg font-semibold text-white">Networking & Security</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-300">Enterprise network design, router and switch configuration, network security, malware analysis, and cybersecurity fundamentals.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow">
+          <h3 class="text-lg font-semibold text-white">Tools & Communication</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-300">Git, Linux, CI/CD fundamentals, Microsoft Office tools, English and Kinyarwanda fluency, plus strong communication and adaptability.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Projects</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Selected work from my academic and technical journey.</h2>
+        </div>
+        <p class="max-w-2xl text-sm leading-7 text-slate-400">
+          These projects reflect my focus on secure systems, enterprise networking, and cloud-based infrastructure.
+        </p>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-3">
+        <article class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-glow">
+          <img src="Projects/Information-security.png" alt="Information security project illustration" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <p class="text-xs uppercase tracking-[0.25em] text-cyan-300">Dec 2021 - Jan 2022</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">Mobile Money Fraud Detection System</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-300">
+              Developed an Android-based mobile money fraud detection system with a team of developers to help capture fraudsters in real time.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-glow">
+          <img src="Projects/cloud-computing.jpg" alt="Cloud infrastructure project illustration" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <p class="text-xs uppercase tracking-[0.25em] text-cyan-300">Aug 2025 - Dec 2025</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">Enterprise Cloud Infrastructure</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-300">
+              Built an Infrastructure-as-a-Service cloud environment using Kubernetes, Docker, OpenStack, and Hadoop, including cluster setup, workload deployment, virtualization, and cloud networking.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-glow">
+          <img src="Projects/networking.jpg" alt="Networking lab project illustration" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <p class="text-xs uppercase tracking-[0.25em] text-cyan-300">Aug 2025 - Dec 2025</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">Advanced Networking Labs</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-300">
+              Designed and implemented scalable enterprise network topologies featuring routing protocols, VLANs, OSPF, NAT, and security configurations for realistic networking scenarios.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Contact</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Let's connect.</h2>
+          <p class="mt-5 max-w-xl text-base leading-7 text-slate-300">
+            I am open to networking, collaboration, internships, and software development opportunities related to IT, cloud systems, security, and full-stack development.
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <a href="mailto:mwesigyeemmy20@gmail.com" class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-cyan-300/60 hover:bg-white/10">
+            <p class="text-sm text-cyan-300">Primary Email</p>
+            <p class="mt-2 text-white">mwesigyeemmy20@gmail.com</p>
+          </a>
+          <a href="mailto:memmy@andrew.cmu.edu" class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-cyan-300/60 hover:bg-white/10">
+            <p class="text-sm text-cyan-300">Academic Email</p>
+            <p class="mt-2 text-white">memmy@andrew.cmu.edu</p>
+          </a>
+          <a href="tel:+250786879213" class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-cyan-300/60 hover:bg-white/10">
+            <p class="text-sm text-cyan-300">Phone</p>
+            <p class="mt-2 text-white">+250 786 879 213</p>
+          </a>
+          <a href="https://www.linkedin.com/in/mwesigye-emmy-a839b3199/" target="_blank" rel="noreferrer" class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-cyan-300/60 hover:bg-white/10">
+            <p class="text-sm text-cyan-300">LinkedIn</p>
+            <p class="mt-2 text-white">linkedin.com/in/mwesigye-emmy-a839b3199</p>
+          </a>
+          <a href="https://github.com/thunderbolt250/" target="_blank" rel="noreferrer" class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-cyan-300/60 hover:bg-white/10 sm:col-span-2">
+            <p class="text-sm text-cyan-300">GitHub</p>
+            <p class="mt-2 text-white">github.com/thunderbolt250</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
