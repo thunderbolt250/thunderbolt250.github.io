@@ -45,50 +45,61 @@
   </header>
 
   <main>
-    <section class="hero">
-  <div class="hero-content">
-    
-    <span class="tag">Portfolio</span>
+    <section id="hero" class="mx-auto max-w-7xl px-6 py-24 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+  
+  <div class="flex-1">
+    <span class="inline-block rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium tracking-wider text-cyan-300 ring-1 ring-inset ring-cyan-400/20">
+      Portfolio
+    </span>
 
-    <h1>Mwesigye Emmy</h1>
+    <h1 class="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+      Mwesigye Emmy
+    </h1>
 
-    <h2 class="headline">
+    <h2 class="mt-6 text-xl leading-8 text-slate-300">
       Building secure, scalable systems at the intersection of software and cybersecurity
     </h2>
 
-    <p class="description">
+    <p class="mt-4 text-lg leading-7 text-slate-400">
       I’m a Software Developer and IT graduate student at Carnegie Mellon University Africa, 
       focused on developing secure applications, fraud detection systems, and reliable network solutions.
     </p>
 
-    <p class="impact">
+    <p class="mt-4 text-sm italic text-slate-500">
       Built real-world projects in machine learning, network security, and cloud-based systems using Python and modern tools.
     </p>
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">Explore My Work</a>
-      <a href="cv/your-cv.pdf" class="btn secondary" download>Download CV</a>
+    <div class="mt-10 flex items-center gap-x-6">
+      <a href="#projects" class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-sm hover:bg-cyan-300 transition-all">
+        Explore My Work
+      </a>
+      <a href="cv/your-cv.pdf" class="text-sm font-semibold leading-6 text-white hover:text-cyan-300 transition-all" download>
+        Download CV <span aria-hidden="true">→</span>
+      </a>
     </div>
 
-    <div class="socials">
-      <a href="https://github.com/thunderbolt250" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/your-link" target="_blank">LinkedIn</a>
-      <a href="mailto:your@email.com">Email</a>
+    <div class="mt-10 flex gap-6 text-sm text-cyan-400">
+      <a href="https://github.com/thunderbolt250" target="_blank" class="hover:underline">GitHub</a>
+      <a href="https://linkedin.com/in/your-link" target="_blank" class="hover:underline">LinkedIn</a>
+      <a href="mailto:your@email.com" class="hover:underline">Email</a>
     </div>
 
-    <div class="tech-stack">
-      <span>Python</span>
-      <span>TensorFlow</span>
-      <span>Docker</span>
-      <span>AWS</span>
-      <span>Wireshark</span>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <span class="rounded-md bg-slate-800 px-2 py-1 text-xs font-medium text-slate-300">Python</span>
+      <span class="rounded-md bg-slate-800 px-2 py-1 text-xs font-medium text-slate-300">TensorFlow</span>
+      <span class="rounded-md bg-slate-800 px-2 py-1 text-xs font-medium text-slate-300">Docker</span>
+      <span class="rounded-md bg-slate-800 px-2 py-1 text-xs font-medium text-slate-300">AWS</span>
+      <span class="rounded-md bg-slate-800 px-2 py-1 text-xs font-medium text-slate-300">Wireshark</span>
     </div>
-
   </div>
 
-  <div class="hero-image">
-    <img src="images/your-image.png" alt="Mwesigye Emmy">
+  <div class="flex-1 flex justify-center">
+    <div class="relative group">
+      <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 opacity-25 blur transition duration-1000 group-hover:opacity-50"></div>
+      <img src="images/your-image.png" alt="Mwesigye Emmy" class="relative h-64 w-64 lg:h-80 lg:w-80 rounded-full object-cover border-2 border-white/10">
+    </div>
   </div>
+
 </section>
 
     <section id="about" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
