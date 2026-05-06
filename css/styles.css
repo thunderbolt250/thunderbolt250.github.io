@@ -1,0 +1,31 @@
+.headline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.impact {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials a {
+  margin-right: 15px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.tech-stack {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.tech-stack span {
+  margin-right: 10px;
+}
